@@ -10,7 +10,16 @@ function App() {
   const addValue = () => {
     
     if(counter<20)
-      setCounter(counter + 1)
+      // setCounter(counter + 1)
+      // setCounter(counter + 1)
+    // setCounter(counter + 1)  GIVES COUNT AS 16 ONLY BECAUSE IT'LL GO AS  A BUNCH OF PACKAGE AND REACT WILL TAKE IT AS ONE ONLU
+      
+      //IF USECASE IS TO INCREASE IT YOU SHOULD TAKE PREVCOUNTER VALUE AND UPDATE IT HERE IT WILL WORK BECAUSE OF PREVCOUNTER VALUE 
+    {
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)}
     // console.log("clicked", counter) 
 
   }
